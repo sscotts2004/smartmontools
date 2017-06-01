@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+[ -x /usr/bin/main ] || exit 0
+
+input = $1
+shift
+
+/usr/bin/mail "$@" < input
